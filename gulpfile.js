@@ -23,9 +23,10 @@ gulp.task('style', function(){
 		.pipe(gulp.dest('dist/css/'));
 });
 
+
 //crear servidor web de desarrollo en localhost puerto 8000
 gulp.task('webserver', function(){
-	gulp.src('../gulpie/')
+	gulp.src('../photolab/')
 		.pipe(webserver({
 			fallback: 'index.html',
 			livereload: true,
@@ -34,4 +35,9 @@ gulp.task('webserver', function(){
 		}));
 });
 
-gulp.task('default', ['script', 'style', 'webserver']);
+//ver cambios
+gulp.task('watch', function(){
+	gulp.watch('assets/sass/*.scss', ['style']);
+});
+
+gulp.task('default', ['script', 'style', 'webserver', 'watch']);
