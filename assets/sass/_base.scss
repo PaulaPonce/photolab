@@ -31,3 +31,26 @@ h2{
 		font-weight: bold;
 	}
 }
+
+#second-section{
+	@include paddingSections();
+	background-color: $color2;
+	img{
+		width: 90%;
+		height: auto;
+	}
+	/*
+	background-image: url(..img/hand.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 25% 25%;
+	*/
+}
+
+#footer{
+	color: $color3;
+	background-color: white;
+	span{
+		color: $color1;
+	}
+}
