@@ -12,9 +12,13 @@ h2{
 	color: $color1;
 	font-size: $h2_size;
 }
+h3{
+	font-size: $h3_size;
+	font-weight: bold;
+}
 
 #header{
-	background-image: url(../img/bg1.jpg);
+	background-image: url("/home/laboratoria-085/Desktop/laboratoria/leccion43-gulp/photolab/assets/img/bg1.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 90vh;
@@ -39,12 +43,30 @@ h2{
 		width: 90%;
 		height: auto;
 	}
-	/*
-	background-image: url(..img/hand.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: 25% 25%;
-	*/
+}
+
+#third-section{
+	@include paddingSections();
+}
+
+#fourth-section{
+	@include paddingSections();
+	background-color: $color2;
+}
+
+#fifth-section{
+	@include paddingSections();
+	h2{
+		color: $color2;
+	}
+}
+
+#sixth-section{
+	@include paddingSections();
+	background-color: $color2;
+	p{
+		text-transform: uppercase;
+	}
 }
 
 #footer{
