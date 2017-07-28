@@ -1,0 +1,33 @@
+body{
+	color: $color3;
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	color: $color2;
+	font-size: $h1_size;
+}
+h2{
+	color: $color1;
+	font-size: $h2_size;
+}
+
+#header{
+	background-image: url(../img/bg1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 90vh;
+	nav{
+	background-color: transparent;
+	-webkit-box-shadow: none;
+		ul li a{
+			color: $color2;
+			font-weight: bold;
+		}
+	}
+	p{
+		color: $color2;
+		font-weight: bold;
+	}
+}
